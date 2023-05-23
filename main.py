@@ -67,9 +67,3 @@ st.sidebar.write(f"""
     
     
     """)
-
-            
-            
-
-
-       
