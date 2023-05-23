@@ -34,11 +34,12 @@ pip install sentence_transformers pinecone-client openai -q
     
 4. Make sure you have the necessary API keys for Pinecone and OpenAI. Update the `vector_search.py` and `qa.py` files with your respective API keys.
 
-5. Run the application using the following command: 
+5. First run the files: `vector_search.py`, `qa.py` and `utils.py`
+6. Run the application `main.py` using the following command: 
 ```
 streamlit run main.py
 ```
-6. Access the application by opening the provided local URL in your web browser.
+7. Access the streamlit application by opening the provided local URL in your web browser.
 
 ## Example
 
