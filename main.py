@@ -4,7 +4,7 @@ from vector_search import *
 import qa
 from utils import *
 
-st.header("Semantic Search Engine")
+st.header(":red[Semantic] Search Engine")
 url = False
 query = False
 options = st.radio(
@@ -43,6 +43,8 @@ st.sidebar.write(f"""
 
     **Vector Metrics**: *Cosine*
 
+    **Vector Embeddings**: *SentenceTransformer('all-MiniLM-L6-v2')*
+
     **OpenAI generation model**: *text-davinci-003*
 
     ---
@@ -66,4 +68,4 @@ st.sidebar.write(f"""
     ---    
     
     
-    """)
+    """) 
