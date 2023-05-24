@@ -2,8 +2,9 @@ import pinecone
 from sentence_transformers import SentenceTransformer,util
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-pinecone.init(api_key="d52a0e4a-aa30-4104-8b1d-3ca4f19bd6fd", environment="asia-northeast1-gcp") 
-index = pinecone.Index("semanticsearch")
+index_name = "semanticsearch"
+pinecone.init(api_key="", environment="") 
+index = pinecone.Index(index_name)
 
 def addData(corpusData,url):
     id = id = index.describe_index_stats()['total_vector_count']
